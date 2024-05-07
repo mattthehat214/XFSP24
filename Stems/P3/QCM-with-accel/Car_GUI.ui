@@ -547,10 +547,51 @@
     </widget>
    </item>
    <item>
-    <layout class="QVBoxLayout" name="layout_Plot"/>
-   </item>
-  </layout>
- </widget>
- <resources/>
- <connections/>
+    <layout class="QVBoxLayout" name="layout_Plot">
+  <item>
+    <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+        <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabPosition">
+        <attribute name="title">
+          <string>Position vs. Time</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="layoutPosition">
+          <item>
+            <widget class="QGraphicsView" name="gv_PositionGraph">
+              <property name="minimumSize">
+                <size>
+                  <width>800</width>
+                  <height>400</height>
+                </size>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </widget>
+      <widget class="QWidget" name="tabForce">
+        <attribute name="title">
+          <string>Force vs. Time</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="layoutForce">
+          <item>
+            <widget class="QGraphicsView" name="gv_ForceGraph">
+              <property name="minimumSize">
+                <size>
+                  <width>800</width>
+                  <height>400</height>
+                </size>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </widget>
+    </widget>
+  </item>
+</layout>
+</widget>
+<resources/>
+<connections/>
 </ui>
+
